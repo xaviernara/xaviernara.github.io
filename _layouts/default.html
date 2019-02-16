@@ -17,10 +17,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 {% seo %}
 
+
+	<style>
+		.fa {
+			  padding: 20px;
+			  font-size: 30px;
+			  width: 30px;
+			  text-align: center;
+			  text-decoration: none;
+			  margin: 5px 2px;
+			  border-radius: 50%;
+			}
+		.fa:hover {
+			opacity: .5;
+			}
+		
+		.fa-linkedin {
+		  background: #007bb5;
+		  color: white;
+		}
+		
+		.fa-skype {
+		  background: #00aff0;
+		  color: white;
+		}
+		
+		.fa-facebook {
+		  background: #3B5998;
+		  color: white;
+		}
+		
+		.fa-twitter {
+		  background: #55ACEE;
+		  color: white;
+		}
+
 	
+	
+	
+	
+	</style>
+
+	<title>Xavier's Portfolio Website</title>
 
 
 
@@ -28,7 +70,7 @@
   </head>
 
   <body>
-	<title>Xavier's Portfolio Website</title>
+	
     <header>
       <div class="container">
         <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -64,7 +106,7 @@
     {% endif %}
 	
 		
-		<img src="https://github.com/xaviernara/xaviernara.github.io/blob/master/_layouts/bio_pic.png"
+		<img src="bio_pic.png"
 	width="300" height="300" align-"left"> <p>Xavier Richardson</p>
 	
 	
@@ -78,7 +120,11 @@
 		</p>	
 	
 	
-	
+		<!-- Add font awesome icons -->
+		<a href="https://www.facebook.com/xavierxatk" class="fa fa-facebook"></a>
+		<a href="https://www.linkedin.com/in/xavier-richardson-235025142/" class="fa fa-linkedin"></a>
+		<a href="skype:live:xarichar" class="fa fa-skype"></a>
+		<a href="https://twitter.com/xatk" class="fa fa-twitter"></a>
 	
   </body>
   
