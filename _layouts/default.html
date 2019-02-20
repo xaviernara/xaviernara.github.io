@@ -22,42 +22,17 @@
 
 
 	<style>
-		.fa {
-			  padding: 20px;
-			  font-size: 30px;
-			  width: 30px;
-			  text-align: center;
-			  text-decoration: none;
-			  margin: 5px 2px;
-			  border-radius: 50%;
-		}
-		.fa:hover {
-			opacity: .5;
-		}
+		<?php
 		
-		.fa-linkedin {
-		  background: #007bb5;
-		  color: white;
-		}
+			include(socialLinksCSS.php);
 		
-		.fa-skype {
-		  background: #00aff0;
-		  color: white;
-		}
+		?>
 		
-		.fa-facebook {
-		  background: #3B5998;
-		  color: white;
-		}
-		
-		.fa-twitter {
-		  background: #55ACEE;
-		  color: white;
-		}
 		
 		.bio{
 		
-			text-align: right;
+			<!--text-align: right;-->
+			text-decoration:underline;
 		
 		
 		}
@@ -111,34 +86,23 @@
     {% endif %}
 	
 		
-		<img src="https://github.com/xaviernara/xaviernara.github.io/blob/master/_layouts/bio_pic.png" width="300" height="300" align-"left"> <p>Xavier Richardson</p>
+		<img src="https://github.com/xaviernara/xaviernara.github.io/blob/master/_layouts/bio_pic.png"
+		width="300" height="300" align-"left"> <p>Xavier Richardson</p>
 	
 	
 		<p>
 			<h2>Contact Info</h2>
-			Email: xarichar.pnw.edu<br>
+			Email: xarichar@pnw.edu<br>
 			Phone: 219-290-1881<br>
 			Github: https://github.com/xaviernara<br>
 			LinkedIn: https://www.linkedin.com/in/xavier-richardson-235025142/<br>
 		
 		</p>
-
-		<div class="bio">
-			<p>
-				Xavier Richardson is a recent Purdue graduate with a degree in Computer Engineering, where he studied electrical engineering, and computer science. 
-				During Xavier's time at university he became the team lead for the Facial Recognition Attendance App. Team and gained a passion for both 
-				Android and Full Stack development. Xavier built a database that houses user-names, emails, passwords, and pictures using MySQL.
-				Xavier utilized PHP to construct the server that â€‹manipulates, analyzes and creates new data based on HTTP requests from the app's website and app UI.<br> 
-				
-				Xavier became the Head Programmer for the university's Astronomy Research Team, where he developed Python code to collect and categorize
-				differentiated temperature dependences of high and low dark current from a closed capture telescope.<br>
-			
-				Xavier showcased his hardware skills by designing a single core processor, where he implemented use of Altera? ?Quartus and Model SIM to test, design 
-				and implement? ?the micro-architecture of the single core processor. He utilized Intel’s Mars M.I.P.S. ?Industry Standard Architecture? 
-				to write assembly language instructions to the processor and simulate runtime. 
-			</p>
-		</div>
-	
+		
+	<?php
+		
+		include (bioFromWebsite.php);
+	?>
 	
 		<!-- Add font awesome icons -->
 		<a href="https://www.facebook.com/xavierxatk" "target ="_blank" class="fa fa-facebook"></a>
